@@ -39,6 +39,27 @@ export default function Home() {
         />
       </div>
 
+      <div className="mb-16 text-center">
+        <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+          About This Project
+        </h2>
+        <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 leading-relaxed">
+          This is a modern Next.js application built with TypeScript and Tailwind CSS. 
+          It demonstrates the power of React Server Components and the latest web development practices.
+        </p>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
+            Next.js 13
+          </span>
+          <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">
+            TypeScript
+          </span>
+          <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">
+            Tailwind CSS
+          </span>
+        </div>
+      </div>
+
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
