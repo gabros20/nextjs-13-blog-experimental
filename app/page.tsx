@@ -39,70 +39,43 @@ export default function Home() {
         />
       </div>
 
-      <div className="mb-16 text-center">
-        <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          About This Project
-        </h2>
-        <p className="max-w-2xl mx-auto text-gray-600 dark:text-gray-300 leading-relaxed">
-          This is a modern Next.js application built with TypeScript and Tailwind CSS. 
-          It demonstrates the power of React Server Components and the latest web development practices.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <span className="px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm font-medium">
-            Next.js 13
-          </span>
-          <span className="px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm font-medium">
-            TypeScript
-          </span>
-          <span className="px-4 py-2 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm font-medium">
-            Tailwind CSS
-          </span>
+      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left">
+        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            About{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              ->
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Modern Next.js application built with TypeScript and Tailwind CSS.
+          </p>
+        </div>
+
+        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Features{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              ->
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Lightning fast, type safe, and developer friendly experience.
+          </p>
+        </div>
+
+        <div className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30">
+          <h2 className={`mb-3 text-2xl font-semibold`}>
+            Stack{' '}
+            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              ->
+            </span>
+          </h2>
+          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
+            Next.js 13, TypeScript, and Tailwind CSS for modern development.
+          </p>
         </div>
       </div>
-
-      <div className="mb-16 text-center">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-green-600 to-teal-600 bg-clip-text text-transparent">
-          Product Features
-        </h2>
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <svg className="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Lightning Fast</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Built with Next.js 13 and optimized for performance with server-side rendering and static generation.
-            </p>
-          </div>
-          
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Type Safe</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Full TypeScript support ensures robust code with compile-time error checking and excellent IDE support.
-            </p>
-          </div>
-          
-          <div className="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-            <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4 mx-auto">
-              <svg className="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              </svg>
-            </div>
-            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Developer Friendly</h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              Beautiful styling with Tailwind CSS and hot reload for an amazing development experience.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
